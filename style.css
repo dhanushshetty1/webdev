@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+   }
+   
+   header{
+       height: 100vh;
+       width: 100vw;
+       background-image: linear-gradient(rgba(37, 120, 48, 0.484),rgba(230, 226, 226, 0.333)),url(./image/bro0.jpg);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+   }
+
+   header>img{
+    position: 125px;
+    width: 125px;
+    top: 7vh;
+    left: 12vw;
+   }
+   nav>ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-right: 12vw;
+    padding-top:7vh ;
+   }
+   nav>ul>li>a{
+    color: White;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover{
+    border-bottom: 2px solid orange;
+    transition: border-bottom .3s;
+}
+
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a>i{
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header>h1{
+    position: absolute;
+    top: 12vh;
+    left: 12vw;
+    color: white;
+    font-size: 40px;
+    font-family: 'Grechen Fuemen', cursive;
+}
+.btn-primary{
+    position: absolute;
+    border: 3px solid orange;
+    top: 27vh;
+    left: 12vw;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    color: orange;
+    padding: 10px 20px;
+}
+.btn-l{
+    color: white;
+    background-color: orange;
+}
+
+.btn-l:hover{
+    background-color: rgb(255, 153, 0);
+    transition: all .3s;
+}
+
+.btn-r{
+    left:24vw ;
+}
+.btn-r:hover{
+    background-color: rgb(255, 153, 0);
+    color: white;
+    transition: all .3s;
+}
+.description>h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 10vh;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+.description>p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8vh 20vw;
+    font-size: 20px;
+    text-align: center;
+}
+.description .box-container .box{
+    border: 2px solid black;
+    box-shadow: var(--box-shadow);
+    background: rgb(225, 222,222);
+    cursor: pointer;
+}
+
+.description .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 2rem;
+}
+.description .box-container .box:hover .image img{
+    transform: scale(1.5);
+}
+
+.description .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+}
+.description .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+
+.description .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.description .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+.description .box-container .box .content p{
+    font-size: 20px;
+    color: grey;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+.slider-container{
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.slider-wrapper{
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+
+}
+.slider-slide{
+    flex: 0 0 50%;
+    position: relative;
+}
+.slider-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-overlay{
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    top: 20%;
+    font-size: 27px;
+    transform: translateY(-50);
+}
+.slider-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    z-index: 1;
+}
+
+.prev{
+    background: none;
+    left: 0;
+}
+.next{
+    background: none;
+    right: 0;
+}
+.btn{
+    font-size: 25px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.new>p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8vh 20vw;
+    font-size: 20px;
+    text-align: center;
+}
+
