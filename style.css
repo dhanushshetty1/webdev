@@ -50,7 +50,7 @@ header>h1{
     left: 12vw;
     color: white;
     font-size: 40px;
-    font-family: 'Grechen Fuemen', cursive;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .btn-primary{
     position: absolute;
@@ -97,16 +97,19 @@ header>h1{
     text-align: center;
 }
 .description .box-container .box{
-    border: 2px solid black;
+    border: 3px solid orange;
     box-shadow: var(--box-shadow);
     background: rgb(225, 222,222);
     cursor: pointer;
+    border-radius: 70px;
+    
 }
 
 .description .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     gap: 2rem;
+    
 }
 .description .box-container .box:hover .image img{
     transform: scale(1.5);
@@ -121,6 +124,7 @@ header>h1{
     width: 100%;
     object-fit: cover;
     transition: 0.2s linear;
+    border-radius: 70px;
 }
 
 .description .box-container .box .content{
@@ -194,8 +198,10 @@ header>h1{
 .btn{
     font-size: 25px;
     padding: 5px;
-    background-color: black;
-    color: white;
+    border-radius: 70px;
+    background-color: orange;
+
+    transition: all .3s;
 }
 .new>p{
     font-family: Georgia, 'Times New Roman', Times, serif;
